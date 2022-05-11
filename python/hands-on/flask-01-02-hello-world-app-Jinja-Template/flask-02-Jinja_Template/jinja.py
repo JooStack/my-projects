@@ -8,7 +8,7 @@ app = Flask(__name__)
 def head():
     return render_template("index.html", number1=34, number2=45)
 
-@app.route("/mult")
+@app.route("/serdar")
 def number():
     num1 = 23
     num2 = 54
@@ -17,4 +17,4 @@ def number():
 
 
 if __name__== "__main__":
-    app.run(debug=True, port=2000)
+    app.run(debug=True)
