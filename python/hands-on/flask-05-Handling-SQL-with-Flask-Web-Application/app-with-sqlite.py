@@ -18,11 +18,13 @@ email VARCHAR);
 data = """
 INSERT INTO users
 VALUES
-	("Tuba", "tuba@amazon.com" ),
-	("Ethan", "ethan@micrasoft.com"),
-	("mostafa", "mostafa@facebook.com"),
-    ("sait", "sait@tesla.com"),
-    ("busra","busra@google");
+    ("Yusuf", "yusuf@amazon.com"),
+    ("Betul", "betul@google.com"),
+    ("Sparkle", "sparkle@bmw.com"),
+    ("Yildiz", "yildiz@mercedes.com"),
+	("Mehmet", "mehmet@porche.com"),
+    ("Tugba", "tugba@tesla.com"),
+    ("Kemal", "kemal@samsung.com");
 """
 
 
@@ -96,4 +98,6 @@ def add_email():
 
 # - Add a statement to run the Flask application which can be reached from any host on port 80.
 if __name__=='__main__':
-    app.run(debug=True)
+    # app.run(debug=True)
+    # app.run(host="0.0.0.0", port=80)
+    app.run(debug=True, port=2000)
